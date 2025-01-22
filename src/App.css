@@ -1,0 +1,107 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.invoice {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  position: relative;
+}
+
+header, .bill-to, .invoice-details {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45A049;
+}
+
+.signature-container {
+  margin: 20px 0;
+}
+
+.signature {
+  max-width: 150px;
+  display: block;
+  margin-top: 10px; /* Adjust margin to space it well */
+  margin-left: auto; /* Align the signature to the right */
+  margin-right: 0; /* Ensure it's not centered */
+}
+
+/* Right-align the footer contents */
+footer {
+  text-align: right;
+  margin-top: 20px;
+}
+
+footer p {
+  margin-bottom: 5px; /* Adjust margin for the text */
+}
+
+footer .signature {
+  margin-top: 10px; /* Add some space between the "Authorized Signature" and the image */
+}
+
+/* Layout adjustment: Right align the totals and signature below the table */
+.totals-signature-container {
+  display: flex;
+  justify-content: space-between; /* Aligns both sides */
+  margin-top: 20px;
+  width: 100%;
+}
+
+.bank-details {
+  width: 45%; /* Adjust width for Bank Details */
+  padding: 0px;
+  text-align: left;
+  /* border: 1px solid #ddd; */
+  /* background-color: #f9f9f9; */
+}
+
+.totals {
+  width: 45%; /* Adjust width for Totals */
+  padding: 10px;
+  /* border: 1px solid #ddd; */
+  /* background-color: #f9f9f9; */
+  text-align: right; /* Right align the total values */
+}
+
+/* To make the layout more responsive on smaller screens */
+@media (max-width: 768px) {
+  .totals-signature-container {
+    flex-direction: column; /* Stack them vertically on smaller screens */
+    align-items: center;
+  }
+
+  .bank-details,
+  .totals {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 10px; /* Add space between sections */
+  }
+}
